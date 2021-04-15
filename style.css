@@ -1,0 +1,171 @@
+.em-container {
+    width: 300px;
+    border: solid 1px #ccc;
+    height: 300px;
+    position: relative;
+}
+
+.em-node-1 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: 3s animation1 linear 1;
+}
+
+.em-node-2 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: 4s animation2 ease-in-out 1;
+}
+
+.em-node-3 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: 2s animation3 ease-in 1;
+}
+
+.em-node-4 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: 4s animation4 ease-out 1;
+}
+
+.em-node-5 {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: 2s animation5 cubic-bezier(0.55, 0.09, 0.68, 0.53) 1;
+}
+
+@keyframes animation1 {
+    0% {
+        top: 280px;
+        opacity: 1;
+        transform: scale(0);
+    }
+    5% {
+        transform: scale(1);
+    }
+    50% {
+        right: 20px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+        right: 20px;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        top: 280px;
+        right: 6px;
+        opacity: 1;
+        transform: scale(0);
+    }
+    5% {
+        transform: scale(1);
+    }
+    50% {
+        right: 30px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+        right: 5px;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        top: 270px;
+        opacity: 1;
+        transform: scale(0);
+    }
+    5% {
+        transform: scale(1);
+    }
+    50% {
+        right: 10px;
+    }
+    80% {
+        opacity: 1;
+
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+        right: 10px;
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animation4 {
+    0% {
+        top: 280px;
+        opacity: 1;
+        transform: scale(0);
+    }
+    5% {
+        transform: scale(1);
+    }
+    50% {
+        right: 25px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+        right: 40px;
+        transform: scale(1.5);
+    }
+}
+
+
+@keyframes animation5 {
+    0% {
+        top: 280px;
+        right: 4px;
+        opacity: 1;
+        transform: scale(0);
+    }
+    5% {
+        transform: scale(1);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
